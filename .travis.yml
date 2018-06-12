@@ -1,0 +1,35 @@
+language: ruby
+rvm:
+  - 2.4.1
+  - 2.5.0
+
+install:
+ - cd site/
+ - bundle install
+
+script:
+ - bundle exec jekyll build --destination ../out/
+
+# branch blocklist, only for GitHub Pages
+branches:
+  except:
+  - gh-pages     # do not test the gh-pages branch
+
+env:
+  global:
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+cache: bundler # caching bundler gem packages will speed up build
+
+# Optional: disable email notifications about the outcome of your builds
+notifications:
+  email: false
+
+deploy:
+  local-dir: out/
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: master

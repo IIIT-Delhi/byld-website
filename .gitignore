@@ -1,3 +1,5 @@
 .DS_Store
 *.pyc
 *.csv
+site/_site/*
+site/.sass-cache/*
