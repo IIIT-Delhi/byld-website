@@ -1,0 +1,16 @@
+<div class="container-fluid" id="projCont">
+  <center>
+  <p id="projText">Projects</p>
+  <ul>
+    {% for project in page.projects %}
+    <li class="byld-project">
+      <p class="proj-name">{{ project.projectName|safe }}</p>
+      <hr>
+      <p class="proj-info">Contributors: {{project.contributors}}</p>
+      <p class="proj-info">Technologies: {{project.technologies}}</p>
+      <p class="proj-info">Status: {{project.status}}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  </center>
+</div>

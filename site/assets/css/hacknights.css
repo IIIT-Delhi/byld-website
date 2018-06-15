@@ -1,0 +1,91 @@
+
+
+#hn-belowNavCont
+	{
+		background-image:url(../images/eventsBack.jpg);
+		background-size:100% auto;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+	}
+#hn-belowNav
+	{
+		padding:200px 0px 200px 0px;
+	}
+#hn-belowNav p
+	{
+		font-size:36px;
+		text-align:center;
+		padding:50px;
+		background-color:rgba(0,0,0,.5);
+		color:#fff;
+		letter-spacing:1px;
+		font-weight: 300;
+	}
+#hn-belowNav p span
+	{
+		font-size:60px;
+		font-weight: 300;
+	}
+
+
+#eventDesc
+	{
+		color:#666;
+		padding-top: 100px;
+		padding-bottom:25px;
+		opacity: 0;
+		
+	}
+
+#eventDesc p span
+	{
+		font-size:48px;
+		font-weight: 300;
+	}
+#eventDesc p
+	{
+		font-size:22px;
+		width:70%;
+		font-weight: 300;
+		text-align:justify;
+	}
+
+#past
+	{
+		color:#666;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		
+	}
+
+#past p span
+	{
+		font-size:48px;
+		font-weight: 300;
+	}
+#past p
+	{
+		font-size:22px;
+		width:70%;
+		text-align:justify;
+	}
+#pastHack
+	{
+		width:80%;
+		padding-bottom: 100px;
+	}
+thead
+	{
+		font-weight:bold;
+	}
+.gitIcon
+	{
+		height:20px;
+		width:20px;
+		opacity:.8;
+		transition:opacity .5s;
+	}
+.gitIcon:hover
+	{
+		opacity:1;
+	}
