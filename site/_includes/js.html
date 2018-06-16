@@ -1,7 +1,28 @@
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery.js"></script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) Note: There is a hard dependency on jquery 1.11.x-->
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+
+<script> window.jQuery || document.write('<script src="{{site.baseurl}}{% link /assets/js/jquery.min.js %}"><\/script>')</script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="{{site.baseurl}}{% link /assets/js/bootstrap.min.js %}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+  //detect if bootstrap js was loaded from cdn o/w load locally https://stackoverflow.com/a/12659921/
+  if(typeof($.fn.modal) === 'undefined') {
+    document.write('<script src="{{site.baseurl}}{% link /assets/js/bootstrap.min.js %}"><\/script>')
+  }
+
+  // CDN fallback for bootstrap css, https://stackoverflow.com/a/7452378/
+  $.each(document.styleSheets, function(i,sheet){
+    if(/bootstrap/.test(sheet.href)) {
+      var rules = sheet.rules ? sheet.rules : sheet.cssRules;
+      if (rules.length == 0) { 
+        $('<link rel="stylesheet" type="text/css" href="{{site.baseurl}}{% link /assets/css/bootstrap.min.css %}" />').appendTo('head');
+      }
+   }
+})
+
+</script>
 
 <script type="text/javascript" src="{{site.baseurl}}{% link /assets/js/smoothscroll.js %}"></script>
 <script type="text/javascript" src="{{site.baseurl}}{% link /assets/js/byldJquery.js %}"></script>
