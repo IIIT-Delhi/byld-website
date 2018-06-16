@@ -4,7 +4,13 @@
   <ul>
     {% for project in page.projects %}
     <li class="byld-project">
+
+      {% if project.url %}
+      <p class="proj-name"><a href="{{ project.url }}"> {{ project.projectName|safe }} </a></p>
+      {% else % }
       <p class="proj-name">{{ project.projectName|safe }}</p>
+      {% endif %}
+
       <hr>
       <p class="proj-info">Contributors: {{project.contributors}}</p>
       <p class="proj-info">Technologies: {{project.technologies}}</p>
