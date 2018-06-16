@@ -4,12 +4,13 @@
 <script> window.jQuery || document.write('<script src="{{site.baseurl}}{% link /assets/js/jquery.min.js %}"><\/script>')</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 <script>
   //detect if bootstrap js was loaded from cdn o/w load locally https://stackoverflow.com/a/12659921/
   if(typeof($.fn.modal) === 'undefined') {
-    document.write('<script src="{{site.baseurl}}{% link /assets/js/bootstrap.min.js %}"><\/script>')
+    console.log("epic fail")
+    //document.write('<script src="{{site.baseurl}}{% link /assets/js/bootstrap.min.js %}"><\/script>')
   }
 
   // CDN fallback for bootstrap css, https://stackoverflow.com/a/7452378/
@@ -17,7 +18,8 @@
     if(/bootstrap/.test(sheet.href)) {
       var rules = sheet.rules ? sheet.rules : sheet.cssRules;
       if (rules.length == 0) { 
-        $('<link rel="stylesheet" type="text/css" href="{{site.baseurl}}{% link /assets/css/bootstrap.min.css %}" />').appendTo('head');
+        console.log("epic fail fail")
+        //$('<link rel="stylesheet" type="text/css" href="{{site.baseurl}}{% link /assets/css/bootstrap.min.css %}" />').appendTo('head');
       }
    }
 })
