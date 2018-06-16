@@ -144,7 +144,7 @@ src:url(../fonts/FACEBOLF.OTF);
 	font-weight: bold;
 }
 
-#wutIsByld
+#what-is-byld
 	{
 		color:#666;
 		padding-top: 100px;
@@ -153,12 +153,12 @@ src:url(../fonts/FACEBOLF.OTF);
 		
 	}
 
-#wutIsByld p span
+#what-is-byld p span
 	{
 		font-size:48px;
 		font-weight: 300;
 	}
-#wutIsByld p
+#what-is-byld p
 	{
 		font-size:22px;
 		width:70%;
@@ -168,7 +168,7 @@ src:url(../fonts/FACEBOLF.OTF);
 
 
 	
-#eventsCont
+#events
 	{
 		margin-top:100px;
 		background-image:url(../images/night2.jpg);
@@ -186,12 +186,12 @@ src:url(../fonts/FACEBOLF.OTF);
 		color:#fff;
 		font-weight: 300;
 	}
-#eventsCont ul
+#events ul
 	{
 		list-style-type:none;
 		padding:50px;
 	}
-#eventsCont ul li
+#events ul li
 	{
 		display:inline-block;
 		padding:60px;
@@ -205,19 +205,19 @@ src:url(../fonts/FACEBOLF.OTF);
 		-webkit-transition:background-color .5s;
 		
 	}
-#eventsCont ul li:hover
+#events ul li:hover
 	{
 		/*background-color:rgba(63,173,168,1);*/
 		background-color:rgba(50,50,50,.8);
 	}
-#eventsCont ul li img
+#events ul li img
 	{
 		width:250px;
 		height:auto;
 	}
 	
 	
-#projCont
+#projects
 	{
 		margin-top:-20px;
 		/*position:relative;
@@ -236,14 +236,14 @@ src:url(../fonts/FACEBOLF.OTF);
 		padding-top: 100px;
 		
 	}
-#projCont center ul
+#projects center ul
 	{
 		list-style-type:none;
 		max-width:1200px;
 		opacity: 0;
 		padding-top:30px;
 	}
-#projCont center ul li
+#projects center ul li
 	{
 		display:inline-block;
 		width: 400px;
@@ -256,16 +256,16 @@ src:url(../fonts/FACEBOLF.OTF);
 		color: #666;
 		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	}
-#projCont center ul li hr
+#projects center ul li hr
 	{
 		border-color: rgba(63,173,168,1);
 		opacity: .2;
 	}
-#projCont center ul li a
+#projects center ul li a
 	{
 		color: rgba(63,173,168,1);
 	}
-#projCont center ul li a:hover
+#projects center ul li a:hover
 	{
 		text-decoration: none;
 	}
@@ -280,7 +280,7 @@ src:url(../fonts/FACEBOLF.OTF);
 	}
 	
 	
-#compCont
+#competitions
 	{
 		background-image:url(../images/compBack.jpg);
 		background-size:100% auto;
