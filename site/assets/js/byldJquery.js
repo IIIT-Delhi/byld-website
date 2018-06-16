@@ -22,7 +22,8 @@ $(document).ready(function(){
     // Note: hash will automatically update after we scroll to the element because we're updating the hash on scrollspy events
     e.preventDefault();
 
-    var href = $(e.target).attr("href");
+    // this always is the anchor element to which the event handler is attached, while e.target might be a child element
+    var href = $(this).attr("href");
 
     var targetElement = $(href);
 
@@ -31,6 +32,7 @@ $(document).ready(function(){
     var distance = Math.abs(window.scrollY - targetElement.offset().top);
 
     var duration = Math.min(distance/avgScrollSpeed, 1000);
+
 
     // Scroll the window, stop any previous animation, stop on user manual scroll
     // Check https://github.com/flesler/jquery.scrollTo for more customizability
