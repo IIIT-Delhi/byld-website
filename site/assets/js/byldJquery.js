@@ -19,9 +19,12 @@ $(document).ready(function(){
   // Bind to the click of all links with a #hash in the href. Modified from https://gist.github.com/flesler/3f3e1166690108abf747
   $('a[href^="#"]').click(function(e) {
     // Prevent the jump and the #hash from appearing on the address bar
+    // Note: hash will automatically update after we scroll to the element because we're updating the hash on scrollspy events
     e.preventDefault();
 
-    var targetElement = $($(e.target).attr("href"));
+    var href = $(e.target).attr("href");
+
+    var targetElement = $(href);
 
     var avgScrollSpeed = 1.5;
 
@@ -33,14 +36,16 @@ $(document).ready(function(){
     // Check https://github.com/flesler/jquery.scrollTo for more customizability
     $(window).stop(true).scrollTo(this.hash, {
       duration: duration, 
-      interrupt: true, 
-      onAfter: function () {
-
-      // Append #hash to address bar url after we're done scrolling to it
-      window.location.hash = $(e.target).attr("href").substring(1);
-    
-    }});
+      interrupt: true
+    });
 
   });
-	
+
+  // When scrollspy updates active navigation element, also update url hash
+	$('[data-spy="scroll"]').on("activate.bs.scrollspy", function (e) {
+    var href = $(e.target).children("a").attr("href");
+    // replace url hash fragment without affecting scrolling
+    history && history.replaceState(null, null, href);
+  })
+
 });
