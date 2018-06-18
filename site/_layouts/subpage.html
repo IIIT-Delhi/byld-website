@@ -1,0 +1,27 @@
+<!-- Subpage Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body id="page-top">
+
+    {% include navigation.html %}
+
+    {% if page.title == 'Hack Nights' %}
+    	{% include hacknights.html %}
+    {% elsif page.title == 'Hackathons' %}
+    	{% include hackathons.html %}
+	{% elsif page.title == 'Techtalks' %}
+    	{% include techtalks.html %}
+    {% endif %}
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Subpage Layout End -->

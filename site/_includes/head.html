@@ -13,8 +13,15 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
-  <link href="{{ 'assets/css/animate.css' | relative_url }}" rel="stylesheet">
   <link href="{{ 'assets/css/byld.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ 'assets/css/animate.css' | relative_url }}" rel="stylesheet">
+  {% if page.title == 'Hack Nights' %}
+  <link href="{{ 'assets/css/hacknights.css' | relative_url }}" rel="stylesheet">
+  {% elsif page.title == 'Hackathons' %}
+  <link href="{{ 'assets/css/hackathons.css' | relative_url }}" rel="stylesheet">
+  {% elsif page.title == 'Techtalks' %}
+  <link href="{{ 'assets/css/techtalks.css' | relative_url }}" rel="stylesheet">
+  {% endif %}
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
 
   {% if site.favicon %}

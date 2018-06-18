@@ -6,9 +6,13 @@
       <span class="icon-bar"></span> 
       <span class="icon-bar"></span> 
     </button>
-    
+    {% if page.title == 'IIIT-Delhi' %}
+      {% assign pref='' %}
+    {% else %}
+      {% assign pref=site.baseurl | append: '/' %}
+    {% endif %}
     <div class="navbar-brand">
-      <a href="#belowNav">
+      <a href="{{pref}}#belowNav">
         <img src="{{site.baseurl}}{% link /assets/images/transparentSmall.png %}">
       </a>
     </div>  
@@ -21,17 +25,17 @@
 
     <div class="collapse navbar-collapse headCollapse">
       <ul id="navigation-links" class="nav navbar-nav navbar-right">
-        <li><a href="#">Blog</a></li>
+        <li><a href="{{pref}}#">Blog</a></li>
         <li class="dropdown">
-          <a href="#">Members<span class="caret"></span></a>
+          <a href="{{pref}}#">Members<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">List of Members</a></li>
+              <li><a href="{{pref}}#">List of Members</a></li>
             </ul>
         </li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#competitions">Competitions</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="{{pref}}#events">Events</a></li>
+        <li><a href="{{pref}}#projects">Projects</a></li>
+        <li><a href="{{pref}}#competitions">Competitions</a></li>
+        <li><a href="{{pref}}#contact-us">Contact Us</a></li>
         <li><a></a></li> <!-- This is a very very terrible hack, TODO: Fix This ! -->
       </ul>
     </div>

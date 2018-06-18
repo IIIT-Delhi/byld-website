@@ -1,0 +1,69 @@
+    <div class="container-fluid" id="ha-belowNavCont">
+      <div class="row-fluid" id="ha-belowNav">
+        <div class="col-md-12  animated fadeInUp">
+          <p>
+            <span>Hackathons<br>
+            </span><br>
+            Next Hackathon: Coming Soon
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="eventDesc" align="center">
+      <p><span>Hackathons</span><br><br>
+      Hackathons are IIIT Delhi's internal competitions organized by Byld for members and non-members of the club. Students participate and work overnight in teams of 3-4 and develop softwares on a given topic. The teams that finish at the top in a Hackathon are recruited into the club.</p>
+    </div>
+    
+    <div id="past" align="center">
+      <p><span>Past Hackathons</span></p>
+    </div>
+    <center>
+    <div class="container-fluid" id="pastHack">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <td>Version
+          <td>Date
+          <td>Theme
+          <td>Judges
+          <td>Winners
+          <td>Facebook
+        </tr>
+      </thead>
+      <tbody>
+        {% assign sorted = (page.events | sort:"version" ) | reverse %}
+        {% for hackathon in sorted %}
+        <tr>
+        <td>{{hackathon.version}}
+        <td>{{hackathon.dateTime | date_to_long_string}}
+        <td>{{hackathon.theme}}
+        <td>{{hackathon.judges}}
+        <td><span class="winners"><b>First Prize: </b>{{hackathon.firstPrizeIdea}}
+          <br>
+          <br>
+          <b>Team: </b>{{hackathon.firstPrizeTeam}}
+          <br>
+          <br>
+          <b>Second Prize: </b>{{hackathon.secondPrizeIdea}}
+          <br>
+          <br>
+          <b>Team: </b>{{hackathon.secondPrizeTeam}}
+          <br>
+          <br>
+          <b>Third Prize: </b>{{hackathon.thirdPrizeIdea}}
+          <br>
+          <br>
+          <b>Team: </b>{{hackathon.thirdPrizeTeam}}
+        </span>
+          <td><a href="{{hackathon.facebook}}"><img src="{{ 'assets/images/social/facebook.png' | relative_url}}" class="gitIcon"></a>
+        </tr>
+        {% endfor %}
+        
+
+      </tbody>
+      </table>
+    </div>
+    </div>
+    </center>

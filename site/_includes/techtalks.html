@@ -1,0 +1,55 @@
+    <div class="container-fluid" id="tt-belowNavCont">
+      <div class="row-fluid" id="tt-belowNav">
+        <div class="col-md-12">
+          <p>
+            <span>Techtalks<br>
+            </span><br>
+            {% if page.comingTechtalk == "" %}
+            Next Techtalk: Coming Soon
+            {% else %}
+            Next Techtalk: '{{comingTechtalk.topic}}' on {{comingTechtalk.dateTime | date_to_long_string}} in {{comingTechtalk.venue}}
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="eventDesc" align="center">
+      <p><span>Tech Talks</span><br><br>
+      Tech Talks are technical seminars where students or invited guests from companies talk about some cool opportunity in software development or any major engineering challenges they overcame.</p>
+    </div>
+    
+    <div id="past" align="center">
+      <p><span>Past Tech Talks</span></p>
+    </div>
+    <center>
+    <div class="container-fluid" id="pastHack">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <td>Version
+          <td>Date
+          <td>Topic
+          <td>Speaker
+          <td>Venue
+          <td>
+        </tr>
+      </thead>
+      <tbody>
+        {% assign sorted = (page.events | sort:"version" ) | reverse %}
+        {% for techtalk in sorted %}
+        <tr>
+          <td>{{ techtalk.version }}
+          <td>{{ techtalk.dateTime | date_to_long_string}}
+          <td>{{ techtalk.topic }}
+          <td>{{ techtalk.host }}
+          <td>{{ techtalk.venue }}
+          <td><a href="{{ techtalk.facebook }}"><img src="{{ 'assets/images/social/facebook.png' | relative_url }}" class="gitIcon"></a>
+        </tr>
+        {% endfor %}  
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </center>
