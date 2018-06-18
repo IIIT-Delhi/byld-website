@@ -1,0 +1,60 @@
+
+<div class="container-fluid" id="hn-belowNavCont">
+  <div class="row-fluid" id="hn-belowNav">
+    <div class="col-md-12">
+      <p>
+        <span>
+          Hack Nights
+          <br>
+        </span>
+        <br>
+        {% if page.comingHacknight == "" %}
+        Next Hack Night: Coming Soon
+        {% else %}
+        Next Hack Night: '{{comingHacknight.topic}}' on {{comingHacknight.dateTime | date_to_long_string}} in {{comingHacknight.venue}}
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="eventDesc" align="center">
+  <p><span>Hack Nights</span><br><br>
+  Hack Nights are weekly events organized and managed by Byld where club members share their knowledge of a software technology with the students. Hack Nights also include an interactive session where students sit together with their machines and code.
+  </p>
+</div>
+
+<div id="past" align="center">
+  <p><span>Past Hack Nights</span></p>
+</div>
+<center>
+  <div class="container-fluid" id="pastHack">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>Version
+            <td>Date
+            <td>Topic
+            <td>Host
+            <td>Venue
+            <td>
+          </tr>
+        <thead>
+        <tbody>
+          {% assign sorted = (page.events | sort:"version" ) | reverse %}
+          {% for hacknight in sorted %}
+          <tr>
+            <td>{{ hacknight.version }}
+            <td>{{ hacknight.dateTime | date_to_long_string }}
+            <td>{{ hacknight.topic }}
+            <td>{{ hacknight.host }}
+            <td>{{ hacknight.venue }}
+            <td><a href="{{ hacknight.facebook }}"><img src="{{ 'assets/images/social/facebook.png' | relative_url }}" class="gitIcon"></a>
+          </tr>
+          {% endfor %}  
+        </tbody>
+      </table>
+    </div>
+  </div>
+</center>
