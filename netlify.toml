@@ -1,0 +1,4 @@
+[build]
+  base = "site/"
+  publish = "site/_site"
+  command = "cd site; bundle install; jekyll build --baseurl ''"
