@@ -1,10 +1,13 @@
 $(document).ready(function(){
+
 	$("#what-is-byld").waypoint(function(){
 		$('#what-is-byld').addClass('animated fadeIn');
 	});
+
 	$("#htjCont").waypoint(function(){
 		$('#htj').addClass('animated fadeIn');
 	});
+
 	$("#competitions").waypoint(function(){
 		$('#comp').addClass('animated fadeIn');
 	});
@@ -12,9 +15,16 @@ $(document).ready(function(){
 	$("#events").waypoint(function(){
 		$('#events li').addClass('animated fadeIn');
 	});
+
 	$("#projects").waypoint(function(){
 		$('#projects ul').addClass('animated fadeIn');
 	});
+
+	$("#eventDesc").waypoint(function(){
+		$('#eventDesc').addClass('animated fadeIn');
+	});
+
+
 
   // Bind to the click of all links with a #hash in the href. Modified from https://gist.github.com/flesler/3f3e1166690108abf747
   $('a[href^="#"]').click(function(e) {
