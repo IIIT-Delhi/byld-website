@@ -6,10 +6,10 @@
       <span class="icon-bar"></span> 
       <span class="icon-bar"></span> 
     </button>
-    {% if page.title == 'IIIT-Delhi' %}
-      {% assign pref='' %}
-    {% else %}
+    {% if page.title %}
       {% assign pref=site.baseurl | append: '/' %}
+    {% else %}
+      {% assign pref='' %}
     {% endif %}
     <div class="navbar-brand">
       <a href="{{pref}}#belowNav">
@@ -25,11 +25,11 @@
 
     <div class="collapse navbar-collapse headCollapse">
       <ul id="navigation-links" class="nav navbar-nav navbar-right">
-        <li><a href="{{pref}}#">Blog</a></li>
+        <li><a href="{{pref}}#belowNav">Blog</a></li>
         <li class="dropdown">
-          <a href="{{pref}}#">Members<span class="caret"></span></a>
+          <a href="{{ 'members' | relative_url }}">Members<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{pref}}#">List of Members</a></li>
+              <li><a href="{{ 'members' | relative_url }}">List of Members</a></li>
             </ul>
         </li>
         <li><a href="{{pref}}#events">Events</a></li>
