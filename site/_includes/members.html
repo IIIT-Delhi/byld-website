@@ -1,0 +1,74 @@
+    <div class="container-fluid" id="mem-belowNavCont">
+      <div class="row-fluid" id="mem-belowNav">
+        <div class="col-md-12">
+          <p>
+            <span>This is Byld<br>
+            </span><br>
+            Complete list of members
+          </p>
+        </div>
+      </div>
+    </div>
+    <center>
+    <div class="container-fluid" id="listCont">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <td>#
+          <td>Name
+          <td>Email
+          <td>Github
+          <td>Skills
+        </tr>
+      </thead>
+      <tbody>
+        {% for member in page.members %}
+        
+        <tr>
+          <td>{{forloop.index}}
+          <td>{{member.name}}
+          <td><a target="_blank" href="mailto:{{member.email}}@iiitd.ac.in"><img src="{{ 'assets/images/social/email.png' | relative_url }}" class="gitIcon"></a>
+          <td>
+            {% if member.github != "" %}
+          <a target="_blank" href="https://github.com/{{member.github}}"><img src="{{ 'assets/images/social/github.png' | relative_url }}" class="gitIcon"></a>
+            {% endif %}
+          <td>{{member.skills}}
+        </tr>
+        
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </center>
+
+<div class="container-fluid" id="membersCont">
+    <center>
+    <p id="membersText">Admins</p>
+    <ul>
+      {% for admin in page.admins %}
+      <li>
+        <img src={{site.baseurl}}/assets/images/{{admin.image}}><br>
+        <p>{{admin.name}}</p><br>
+        <span>
+        <a target="_blank" href="{{admin.facebook}}"><img src="{{ 'assets/images/social/facebook.png' | relative_url }}"></a>
+        <a target="_blank" href="https://github.com/{{admin.github}}"><img src="{{ 'assets/images/social/github.png' | relative_url }}"></a>
+        <a target="_blank" href="mailto:{{admin.mail}}"><img src="{{ 'assets/images/social/email.png' | relative_url }}"></a>
+        </span>
+      </li>
+      {% endfor %}
+      
+      <li>
+        <a href="http://www.iiitd.edu.in/~purandare/"><img src="{{ 'assets/images/members/rahul.jpg' | relative_url }}"><br></a>
+        <p>Dr. Rahul Purandare</p><br>
+        <span>
+        <a target="_blank" href="mailto:purandare@iiitd.ac.in"><img src="{{ 'assets/images/social/email.png' | relative_url }}"></a>
+        </span>
+      </li>
+      
+    </ul>
+    
+    
+    </center>
+  </div>

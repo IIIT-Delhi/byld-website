@@ -10,11 +10,13 @@
     {% include navigation.html %}
 
     {% if page.title == 'Hack Nights' %}
-    	{% include hacknights.html %}
+      {% include hacknights.html %}
     {% elsif page.title == 'Hackathons' %}
-    	{% include hackathons.html %}
-	{% elsif page.title == 'Techtalks' %}
-    	{% include techtalks.html %}
+      {% include hackathons.html %}
+    {% elsif page.title == 'Techtalks' %}
+      {% include techtalks.html %}
+    {% elsif page.title == 'Members' %}
+      {% include members.html %}
     {% endif %}
 
     {% include footer.html %}
