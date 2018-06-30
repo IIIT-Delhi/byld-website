@@ -43,7 +43,7 @@ defaults:
       path: ""
       type: "members"
     values:
-      layout: "member"
+      layout: "member-page"
 
 # Build settings
 markdown: kramdown
