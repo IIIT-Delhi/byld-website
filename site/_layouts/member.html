@@ -1,0 +1,58 @@
+<!-- Subpage Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+  <style>
+    #per-member-page-container {
+      padding: 150px 10px 30px; /* top side bottom */
+    }
+
+    .member-content-separation-line {
+      border-top: 1px solid #cecece;
+    }
+
+    #page-bottom 
+      {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+    body {
+      min-height: 100vh;
+    }
+  </style>
+
+  <body id="page-top">
+
+    {% include navigation.html %}
+
+    <div class="container-fluid">
+      <div class="row-fluid" id="per-member-page-container">
+        <div class="col-md-12">
+          <div class="above-the-line">
+            <span class="member-name">{{page.name}}</span>
+          </div>
+          <!-- We're in control of the display above the line - allows us to maintain consistency. But allow arbitary HTML below the line -->
+          <!-- Allowing it would give people freedom to make their page their own, because otherwise they may not be interested in making their page at all. -->
+          <!-- Stuff which custom HTML would allow - Github links, fontawesome icons, embed tweets, embed buttons to github, show off your stackexchange points, etc-->
+          <hr class="member-content-separation-line">
+          <div class="member-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-bottom">
+      {% include footer.html %}
+    </div>
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Subpage Layout End -->
