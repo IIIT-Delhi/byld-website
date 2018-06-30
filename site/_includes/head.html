@@ -1,7 +1,7 @@
 <!-- HEAD Start -->
 
 <head>
-  <title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}} | IIIT-Delhi </title>
+  <title> {{page.type}} {% if page.title %}{{page.title}} | {% endif %}{{site.title}} | IIIT-Delhi </title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="{{site.author}}">
@@ -23,6 +23,8 @@
   <link href="{{ 'assets/css/techtalks.css' | relative_url }}" rel="stylesheet">  
   {% elsif page.title == 'Members' %}
   <link href="{{ 'assets/css/members.css' | relative_url }}" rel="stylesheet">
+  {% elsif page.collection == 'members' %}
+  <link href="{{ 'assets/css/member-pages.css' | relative_url }}" rel="stylesheet">
   {% endif %}
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
 
