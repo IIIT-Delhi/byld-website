@@ -13,6 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Metadata
+
 title: Byld
 email: byld-admin@iiitd.ac.in
 author: Peeyush Kushwaha, Viresh Gupta
@@ -22,12 +25,25 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 keywords: Byld, IIIT-Delhi, Software Development, Club, Programming
 lang: en-IN
-favicon: "/assets/images/favicon.png"
+fb_username: byld.iiitd
+github_username:  IIIT-Delhi
+
+# Config
 
 baseurl: "/byldWebsite" # the subpath of your site, e.g. /blog
 url: "https://virresh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-fb_username: byld.iiitd
-github_username:  IIIT-Delhi
+favicon: "/assets/images/favicon.png"
+collections:
+  members:
+    output: true
+    permalink: /:collection/:name
+defaults:
+  -
+    scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "member"
 
 # Build settings
 markdown: kramdown
