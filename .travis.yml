@@ -7,7 +7,7 @@ install:
  - bundle install
 
 script:
- - bundle exec jekyll build --destination ../out/
+ - JEKYLL_ENV=production bundle exec jekyll build --destination ../out/
 
 # branch blocklist, only for GitHub Pages
 branches:
