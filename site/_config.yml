@@ -20,9 +20,9 @@ title: Byld
 email: byld-admin@iiitd.ac.in
 author: Peeyush Kushwaha, Viresh Gupta
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Byld aims to bring together the community of developers within IIIT-Delhi and
+  maintain a high standard / quality of devs.
+  We provide newcomers a path to level up their skills and join us.
 keywords: Byld, IIIT-Delhi, Software Development, Club, Programming
 lang: en-IN
 fb_username: byld.iiitd
@@ -31,7 +31,7 @@ github_username:  IIIT-Delhi
 # Config
 
 baseurl: "/byldWebsite" # the subpath of your site, e.g. /blog
-url: "https://virresh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://byld.iiitd.edu.in" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/assets/images/favicon.png"
 collections:
   members:
