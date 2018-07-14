@@ -342,12 +342,6 @@ members:
 - email: royal17310
   name: Royal
 
-# He's not on the mailing list
-- email: rounaq14089
-  name: rounaq14089
-  github: rjalfa
-  skills: Software Development, Web Development
-
 - email: rudraroop17311
   name: Rudraroop Roy
 
@@ -419,12 +413,6 @@ members:
   name: Yashasvi Baweja
   github: yashasvi97
   skills: Anything related to data mining
-
-# He's not on the mailing list
-- email: yashit16123
-  name: yashit16123
-  github: YashitM
-  skills: Python, Django, Android, Flask
 
 - email: yellapragada15117
   name: yellapragada15117
