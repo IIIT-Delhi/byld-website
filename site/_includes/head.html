@@ -10,6 +10,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
 
+  <!-- META Tags for nice visibility -->
+
+  <meta property="og:title" content="{{site.title}}">
+  <meta property="og:description" content="{{site.description}}">
+  <meta property="og:image" content="{{site.favicon | absolute_url}}">
+  <meta property="og:url" content="{{site.url}}">
+  <meta name="twitter:card" content="{{site.description}}">
+  <meta property="og:site_name" content="{{site.title}}">
+  <meta name="twitter:image:alt" content="{{site.title}}">
+
+
   {% if jekyll.environment == "production" %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68217485-1"></script>
