@@ -45,3 +45,19 @@ thead
 	{
 		opacity:1;
 	}
+
+.admin-fa-icons > i.fab {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -16px;
+  opacity: .5;
+  font-size: 22px;
+  color: #858585;
+  transition:opacity 0.5s;
+}
+
+.admin-fa-icons > i.fab:hover {
+  opacity: 1;
+  color: #71ae47; /*#669c41 is the original color of the email image but this lighter shade looks better */
+}

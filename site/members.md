@@ -2,35 +2,48 @@
 layout: subpage
 title: 'Members'
 admins:
-- mail: "nalin14065@iiitd.ac.in"
-  image: "admins/nalin.jpg"
-  github: "nalin1096"
-  facebook: "https://www.facebook.com/nalin.gupta.129"
-  name: "Nalin Gupta"
+# fa-icons field: lhs is the name of icon, rhs is the link. See list of icons here: https://fontawesome.com/
 
-- mail: "siddharth16268@iiitd.ac.in"
-  image: "admins/siddharth.jpg"
-  github: "geekSiddharth"
-  facebook: "https://www.facebook.com/SiddharthYadav.geek"
-  name: "Siddharth Yadav"
-
-- mail: "suryatej161022@iiitd.ac.in"
-  image: "admins/suryatej.jpg"
-  github: "suryatejreddy"
-  facebook: "https://www.facebook.com/profile.php?id=100000854901674"
-  name: "Suryatej Reddy Vyalla"
-
-- mail: "baani16234@iiitd.ac.in"
+- mail: "baani16234"
   image: "admins/baani.jpg"
-  github: "BaaniLeen/"
-  facebook: "https://www.facebook.com/profile.php?id=100011462257325"
-  name: " Baani Leen Kaur"
+  name: "Baani Leen Kaur"
+  fa-icons: 
+    github: "https://github.com/BaaniLeen"
+    facebook: "https://www.facebook.com/profile.php?id=100011462257325"
 
-- mail: "varun13168@iiitd.ac.in"
-  image: "admins/varun.jpg"
-  github: "bansalvarun"
-  facebook: "https://www.facebook.com/bansalvarun15"
-  name: "Varun Bansal"
+- mail: "siddharth16268"
+  image: "admins/siddharth.jpg"
+  name: "Siddharth Yadav"
+  fa-icons: 
+    github: "https://github.com/geekSiddharth"
+    facebook: "https://www.facebook.com/SiddharthYadav.geek"
+
+- mail: "suryatej161022"
+  image: "admins/suryatej.jpg"
+  name: "Suryatej Reddy Vyalla"
+  fa-icons: 
+    github: "https://github.com/suryatejreddy"
+    facebook: "https://www.facebook.com/profile.php?id=100000854901674"
+
+- mail: "kanika16047"
+  image: "admins/suryatej.jpg"
+  name: "Kanika Saini"
+  fa-icons: 
+    github: "https://github.com/kanikasaini"
+
+- mail: "peeyush16254"
+  image: "admins/suryatej.jpg"
+  name: "Peeyush"
+  fa-icons:
+    github: "https://github.com/peey"
+    twitter: "https://twitter.com/peeyFTW"
+
+- mail: "viresh16118"
+  image: "admins/suryatej.jpg"
+  name: "Viresh"
+  fa-icons:
+    github: "https://github.com/virresh"
+
 
 #TODO: sort the data in the source in some sensible way (first by batch, then by names). rn alums are random and current members are sorted by name
 
