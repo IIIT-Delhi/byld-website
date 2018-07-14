@@ -52,9 +52,10 @@
         <img src={{site.baseurl}}/assets/images/{{admin.image}}><br>
         <p>{{admin.name}}</p><br>
         <span>
-        <a target="_blank" href="{{admin.facebook}}"><img src="{{ 'assets/images/social/facebook.png' | relative_url }}"></a>
-        <a target="_blank" href="https://github.com/{{admin.github}}"><img src="{{ 'assets/images/social/github.png' | relative_url }}"></a>
-        <a target="_blank" href="mailto:{{admin.mail}}"><img src="{{ 'assets/images/social/email.png' | relative_url }}"></a>
+        <a target="_blank" href="mailto:{{admin.mail}}@iiitd.ac.in"><img src="{{ 'assets/images/social/email.png' | relative_url }}"></a>
+        {% for icon in admin.fa-icons %}
+        <a target="_blank" href="{{icon[1]}}" class="admin-fa-icons"><i class="fab fa-{{icon[0]}}"></i></a>
+        {% endfor %}
         </span>
       </li>
       {% endfor %}
