@@ -30,8 +30,8 @@
           <td>{{member.name}}
           <td><a target="_blank" href="mailto:{{member.email}}@iiitd.ac.in"><img src="{{ 'assets/images/social/email.png' | relative_url }}" class="gitIcon"></a>
           <td>
-            {% if member.github != "" %}
-          <a target="_blank" href="https://github.com/{{member.github}}"><img src="{{ 'assets/images/social/github.png' | relative_url }}" class="gitIcon"></a>
+            {% if member.github and member.github != "" %}
+              <a target="_blank" href="https://github.com/{{member.github}}"><img src="{{ 'assets/images/social/github.png' | relative_url }}" class="gitIcon"></a>
             {% endif %}
           <td>{{member.skills}}
         </tr>
