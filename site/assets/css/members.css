@@ -46,7 +46,7 @@ thead
 		opacity:1;
 	}
 
-.admin-fa-icons > i.fab {
+.admin-fa-icons > i {
   width: 25px;
   height: 25px;
   position: relative;
@@ -57,7 +57,7 @@ thead
   transition:opacity 0.5s;
 }
 
-.admin-fa-icons > i.fab:hover {
+.admin-fa-icons > i:hover {
   opacity: 1;
   color: #71ae47; /*#669c41 is the original color of the email image but this lighter shade looks better */
 }

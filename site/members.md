@@ -2,50 +2,55 @@
 layout: subpage
 title: 'Members'
 admins:
-# fa-icons field: lhs is the name of icon, rhs is the link. See list of icons here: https://fontawesome.com/
+
+# fa-icons field: key (lhs) is the name of icon, value (rhs) is the link. See list of icons here: https://fontawesome.com/
+# The HTML code to include an icon is simply just this: <i class="fab fa-facebook"></i>
+# So how this is working is that we just include the key specified here in the class attribute.
+
+# Icon names must be prefixed with either `fab` or with `fas`. `fab` is used by fontawesome for brand icons (e.g. facebook, github, twitter),
+# and `fas` is used by fontawesome for other icons (they call these "solid icons"). You can find which one to use by looking at the html snippet on the icon page.
 
 - mail: "baani16234"
   image: "admins/baani.jpg"
   name: "Baani Leen Kaur"
   fa-icons: 
-    github: "https://github.com/BaaniLeen"
-    facebook: "https://www.facebook.com/profile.php?id=100011462257325"
+    fab fa-github: "https://github.com/BaaniLeen"
+    fab fa-facebook: "https://www.facebook.com/profile.php?id=100011462257325"
 
 - mail: "siddharth16268"
   image: "admins/siddharth.jpg"
   name: "Siddharth Yadav"
   fa-icons: 
-    github: "https://github.com/geekSiddharth"
-    facebook: "https://www.facebook.com/SiddharthYadav.geek"
+    fab fa-github: "https://github.com/geekSiddharth"
+    fab fa-facebook: "https://www.facebook.com/SiddharthYadav.geek"
 
 - mail: "suryatej161022"
   image: "admins/suryatej.jpg"
   name: "Suryatej Reddy Vyalla"
   fa-icons: 
-    github: "https://github.com/suryatejreddy"
-    facebook: "https://www.facebook.com/profile.php?id=100000854901674"
+    fab fa-github: "https://github.com/suryatejreddy"
+    fab fa-facebook: "https://www.facebook.com/profile.php?id=100000854901674"
 
 - mail: "kanika16047"
   image: "admins/suryatej.jpg"
   name: "Kanika Saini"
   fa-icons: 
-    github: "https://github.com/kanikasaini"
+    fab fa-github: "https://github.com/kanikasaini"
 
 - mail: "peeyush16254"
   image: "admins/suryatej.jpg"
   name: "Peeyush"
   fa-icons:
-    github: "https://github.com/peey"
-    twitter: "https://twitter.com/peeyFTW"
+    fab fa-github: "https://github.com/peey"
+    fab fa-twitter: "https://twitter.com/peeyFTW"
 
 - mail: "viresh16118"
   image: "admins/viresh.jpg"
   name: "Viresh Gupta"
   fa-icons:
-    github: "https://github.com/virresh"
-    globe-asia fas: "https://virresh.github.io"
-    twitter: "https://twitter.com/virresh"
-
+    fab fa-github: "https://github.com/virresh"
+    fas fa-globe-asia: "https://virresh.github.io"
+    fab fa-twitter: "https://twitter.com/virresh"
 
 #TODO: sort the data in the source in some sensible way (first by batch, then by names). rn alums are random and current members are sorted by name
 

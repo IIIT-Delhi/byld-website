@@ -54,7 +54,7 @@
         <span>
         <a target="_blank" href="mailto:{{admin.mail}}@iiitd.ac.in"><img src="{{ 'assets/images/social/email.png' | relative_url }}"></a>
         {% for icon in admin.fa-icons %}
-        <a target="_blank" href="{{icon[1]}}" class="admin-fa-icons"><i class="fab fa-{{icon[0]}}"></i></a>
+        <a target="_blank" href="{{icon[1]}}" class="admin-fa-icons"><i class="{{icon[0]}}"></i></a>
         {% endfor %}
         </span>
       </li>
