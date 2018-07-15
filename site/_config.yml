@@ -30,7 +30,7 @@ github_username:  IIIT-Delhi
 
 # Config
 
-baseurl: "/byldWebsite" # the subpath of your site, e.g. /blog
+baseurl: "/byld-website" # the subpath of your site, e.g. /blog
 url: "http://byld.iiitd.edu.in" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/assets/images/favicon.png"
 collections:
