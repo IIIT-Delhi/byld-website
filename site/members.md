@@ -39,10 +39,12 @@ admins:
     twitter: "https://twitter.com/peeyFTW"
 
 - mail: "viresh16118"
-  image: "admins/suryatej.jpg"
-  name: "Viresh"
+  image: "admins/viresh.jpg"
+  name: "Viresh Gupta"
   fa-icons:
     github: "https://github.com/virresh"
+    globe-asia fas: "https://virresh.github.io"
+    twitter: "https://twitter.com/virresh"
 
 
 #TODO: sort the data in the source in some sensible way (first by batch, then by names). rn alums are random and current members are sorted by name
@@ -400,9 +402,9 @@ members:
   skills: Django, Ruby on Rails, Javascript, elasticsearch, Android, nodejs, ROS, Bash, Linux, Git, AWS, Digital Ocean Droplets, Arduino, Code Blocks, Eclipse, NetBeans, MATLAB, OpenGL, Latex, 
 
 - email: viresh16118
-  name: viresh16118
+  name: Viresh Gupta
   github: virresh
-  skills: Flask-Android-VueJS-Crawlers
+  skills: Web Dev, Git, Python, Unity, Automation and Scraping, and any generic dev stuff
 
 - email: vrinda14122
   name: Vrinda Malhotra
