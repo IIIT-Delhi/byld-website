@@ -32,10 +32,12 @@ admins:
     fab fa-facebook: "https://www.facebook.com/profile.php?id=100000854901674"
 
 - mail: "kanika16047"
-  image: "admins/suryatej.jpg"
+  image: "admins/kanika.jpg"
   name: "Kanika Saini"
   fa-icons: 
     fab fa-github: "https://github.com/kanikasaini"
+    fab fa-facebook: "https://www.facebook.com/kanikasaini911"
+    fab fa-twitter: "https://twitter.com/kanikasaini911"
 
 - mail: "peeyush16254"
   image: "admins/suryatej.jpg"
@@ -258,6 +260,11 @@ members:
 
 - email: gurek15033
   name: Gurek
+
+- email: kanika16047
+  name: Kanika Saini
+  github: kanikasaini
+  skils: Javascript, React, Django, Python, Git, Mercurial, Firefox 
 
 - email: katyayani15046
   name: Katyayni Singh
