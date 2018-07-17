@@ -344,6 +344,9 @@ members:
 
 - email: raghav17082
   name: Raghav Kukreti
+  github: raghav-kukreti
+  skills: HTML5, SASS,Stylus, CSS, JavaScript,jQuery, Node.js, CoffeeScript, Deep Learning, Machine Learning, Django,
+  Jekyll, Haskell, Ruby, C, C++, Java, Python, Firebase, Git
 
 - email: rishabh15076
   name: rishabh16076
