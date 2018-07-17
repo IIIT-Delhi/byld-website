@@ -228,6 +228,11 @@ members:
   github: brihijoshi
   skills: Python, IoT, Node.JS, RoR, Hadoop
 
+- email: chirag17041
+  name: Chirag Jain
+  github: chirag-jn
+  skills: C++, Python, Scripting, Unity 
+
 # he's not on the mailing list
 - email: daksh17336
   name: Daksh
