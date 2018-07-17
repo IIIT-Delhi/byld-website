@@ -254,6 +254,8 @@ members:
 
 - email: divyanshu15028
   name: Divyanshu Talwar
+  github: divyanshu-talwar
+  skills: Pytorch, Tensorflow, CUDA, Node.js, Django, JavaScript, jQuery, HTML5, CSS, Shell Scripting, Python, C, C++, Java, Git, Machine Learning, Reinforcement Learning, Deep Learning, Collaborative Filtering, GPU computing
 
 - email: falak16018
   name: Falak
