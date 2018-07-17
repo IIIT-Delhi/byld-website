@@ -1,3 +1,7 @@
+/**
+ * This file is included on every page on the website
+ */
+
 $(document).ready(function(){
 
 	$("#what-is-byld").waypoint(function(){
