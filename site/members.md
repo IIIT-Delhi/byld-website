@@ -40,8 +40,8 @@ admins:
     fab fa-twitter: "https://twitter.com/kanikasaini911"
 
 - mail: "peeyush16254"
-  image: "admins/suryatej.jpg"
-  name: "Peeyush"
+  image: "admins/peeyush.png"
+  name: "Peeyush Kushwaha"
   fa-icons:
     fab fa-github: "https://github.com/peey"
     fab fa-twitter: "https://twitter.com/peeyFTW"
@@ -340,7 +340,7 @@ members:
 - email: peeyush16254
   name: Peeyush
   github: peey
-  skills: JavaScript, Node, and a lot of other dev stuff
+  skills: JavaScript and Compilers
 
 - email: raghav17082
   name: Raghav Kukreti
