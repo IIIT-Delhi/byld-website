@@ -312,6 +312,8 @@ members:
 
 - email: mukesh14149
   name: Mukesh Gupta
+  github: mukesh14149
+  skills: Java, Android, Machine Learning, Ionic Framework
 
 - email: nalin14065
   name: Nalin Gupta
