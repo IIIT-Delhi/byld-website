@@ -398,7 +398,7 @@ members:
 - email: siddharth16268
   name: siddharth16268
   github: geekSiddharth
-  skills: Ctrl+C <-> Ctrl+V
+  skills: Ctrl+V <-> Ctrl+C
 
 - email: suryatej16102
   name: suryatej16102
