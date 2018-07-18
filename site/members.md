@@ -277,7 +277,7 @@ members:
 - email: karan17058
   name: Karan Tandon
   github: karan2dec
-  skills: C++, Python, Java, Flask, HTML5, CSS, Bootstrap, C#, Unity
+  skills: C++, Python, Java, Flask, HTML5, CSS, JS, Bootstrap, C#, Unity
 
 - email: kushagra14056
   name: Kushagra Singh
