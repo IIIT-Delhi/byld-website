@@ -444,4 +444,9 @@ members:
   github: meriki
   skills: Django, python, c, c++
 
+- email: aniket17133
+  name: Aniket Pradhan
+  github: Aniket-Pradhan
+  skills: Android (Java), Python, Web Dev, React Native
+
 ---
