@@ -276,6 +276,11 @@ members:
 - email: katyayani15046
   name: Katyayni Singh
 
+- email: karan17058
+  name: Karan Tandon
+  github: karan2dec
+  skills: C++, Python, Java, Flask, HTML5, CSS, JS, Bootstrap, C#, Unity
+
 - email: kushagra14056
   name: Kushagra Singh
   github: Kush789
