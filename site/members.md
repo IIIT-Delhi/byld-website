@@ -403,6 +403,11 @@ members:
   name: siddharth16268
   github: geekSiddharth
   skills: Ctrl+C <-> Ctrl+V
+  
+- email: sonali18317
+  name: Sonali Singhal
+  github: Sonalisinghal
+  skills: C, Web Development, Python
 
 - email: suryatej16102
   name: suryatej16102
