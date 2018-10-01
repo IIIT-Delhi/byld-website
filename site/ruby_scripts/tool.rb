@@ -32,7 +32,7 @@ class Tool
 
     Pluto.connect( @db_config )
 
-    Pluto::Model::Item.latest.limit(10).each_with_index do |item,i|
+    Pluto::Model::Item.latest.limit(100).each_with_index do |item,i|
       puts "[#{i+1}] #{item.title}"
   
       generate_blog_post( item )
@@ -53,11 +53,11 @@ class Tool
 
     frontmatter =<<EOS
 ---
-title:      "#{item.title}"
+title:      "#{item.title.gsub("\"","\\\"")}"
 created_at: #{item.published}
 author:     #{item.feed.title}
 layout:     post
-original_link: "#{item.url}"
+original_link: "#{item.url unless item.url.empty?}"
 ---
 EOS
 
