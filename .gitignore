@@ -3,3 +3,5 @@
 *.csv
 site/_site/*
 site/.sass-cache/*
+site/_posts/*
+site/planet.db

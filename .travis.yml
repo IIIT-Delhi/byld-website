@@ -3,16 +3,26 @@ rvm:
   - 2.4.1
 
 install:
- - cd site/
- - bundle install
+  - .ci/download_db.sh
+  - cd site/
+  - bundle install
+
+before_script:
+  # Set up planet pluto database using our planet configuration file
+  # More on planet pluto: https://github.com/feedreader
+  - pluto update planet.ini
+  # Use our own spinoff of the jekyll gem jekyll-planet to generate posts
+  # Original gem link: https://github.com/feedreader/jekyll-planet
+  - ruby -r 'jekyll/planet' ruby_scripts/tool.rb
 
 script:
- - JEKYLL_ENV=production bundle exec jekyll build --destination ../out/
+  - JEKYLL_ENV=production bundle exec jekyll build --destination ../out/
 
-# branch blocklist, only for GitHub Pages
+# branch blocklist, only for GitHub Pages and db store
 branches:
   except:
   - gh-pages     # do not test the gh-pages branch
+  - db
 
 env:
   global:
@@ -26,9 +36,17 @@ notifications:
   email: false
 
 deploy:
-  local-dir: out/
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  on:
-    branch: master
+  - local-dir: out/
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    on:
+      branch: master
+  - local-dir: planet_db/
+    provider: pages
+    skip-cleanup: true
+    keep-history: true
+    target-branch: db
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    on:
+      branch: master

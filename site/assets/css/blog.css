@@ -42,6 +42,11 @@ body
 		padding-bottom: 50px;
 		border-top-right-radius: 90px;
 	}
+.blogPost .row
+	{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
 .postWriter
 	{
 		float: left;
@@ -83,7 +88,6 @@ hr
 .postContent p
 	{
 		text-align: justify;
-		width: 70%;
 		color: #7f8c8d;
 		font-size: 16px;
 		font-weight: 400;
