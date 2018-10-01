@@ -44,6 +44,11 @@ defaults:
       type: "members"
     values:
       layout: "member-page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown

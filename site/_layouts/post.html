@@ -1,0 +1,83 @@
+<!-- Blog Layout Start -->
+{% assign author = page.author | split: "," %}
+{% if author.size > 1 %}
+{% assign img_link = author.last %}
+{% else %}
+{% assign img_link = "assets/images/profile_default.png" | relative_url %}
+{% endif %}
+{% assign name = author.first %}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar"  data-offset="151">
+
+    {% include navigation.html %}
+    {% if page.title == 'Blog' %}
+    <div class="container-fluid" id="topCont">
+      <div class="row">
+        <img src="{{ 'assets/images/blogTop.png' | relative_url }}">
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="container" id="postsContainer">
+      <div class="row">
+    {% if page.title != 'Blog' %}
+      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+        <div class="row blogPost">
+          <div class="col-md-12 col-lg-12">
+            <div class="row postTop">
+              <p class="timeStamp">{{ name }} blogged on {{ page.created_at | date: "%a, %d %b %Y" }}</p>
+              <img class="postWriter" src="{{ img_link }}" style="min-width:150px; min-height:150px; max-height:150px; max-width:150px;">
+              <p class="postTitle">{{ page.title }}</p>
+              {% if page.original_link %}
+              <p class="timeStamp">Read original article at <a href="{{ page.original_link }}">{{ page.original_link }}</a></p>
+              {% endif %}
+            </div>
+            <hr>
+            <div class="row postContent">
+              <p>
+                {{ page.content }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      {% if site.posts.size == 0 %}
+        <h2>No blogs have been added until now. Stay tuned !</h2>
+      {% endif %}
+      {% for post in site.posts %}
+        <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+          <div class="row blogPost">
+            <div class="col-md-12 col-lg-12">
+              <div class="row postTop">
+                {% assign authp = post.author | split: "," %}
+                <p class="timeStamp">{{ authp.first }} blogged on {{ post.created_at | date: "%a, %d %b %Y" }}</p>
+                <img class="postWriter" src="{{ authp[1] | default: img_link }}" style="min-width:150px; min-height:150px; max-height:150px; max-width:150px;">
+                <p class="postTitle"><a style="color:inherit; text-decoration:none" href="{{post.url | relative_url}}">{{ post.title }}</a></p>
+              </div>
+              <hr>
+              <div class="row postContent">
+                <p>
+                  {{ post.content | strip_html | truncate: 500 }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    {% endif %}
+      </div>
+    </div>
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Blog Layout End -->

@@ -39,7 +39,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+  {% if page.layout == 'post' %}
+  <link href="{{ 'assets/css/blog.css' | relative_url }}" rel="stylesheet">
+  {% else %}
   <link href="{{ 'assets/css/common.css' | relative_url }}" rel="stylesheet">
+  {% endif %}
   <link href="{{ 'assets/css/animate.css' | relative_url }}" rel="stylesheet">
   {% if page.title == 'Hack Nights' %}
   <link href="{{ 'assets/css/hacknights.css' | relative_url }}" rel="stylesheet">
@@ -52,7 +56,7 @@
   {% elsif page.collection == 'members' %}
   <link href="{{ 'assets/css/member-pages.css' | relative_url }}" rel="stylesheet">
   {% endif %}
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
 
   {% if site.favicon %}
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">

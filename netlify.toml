@@ -1,4 +1,4 @@
 [build]
-  base = "site/"
+  base = ""
   publish = "site/_site"
-  command = "cd site; bundle install; jekyll build --baseurl ''"
+  command = ".ci/download_db.sh; cd site/ ; bundle install; pluto update planet.ini; ruby -r 'jekyll/planet' ruby_scripts/tool.rb; jekyll build --baseurl ''"
