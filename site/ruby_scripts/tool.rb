@@ -1,5 +1,6 @@
 # encoding: utf-8
-
+# Original GEM: https://github.com/feedreader/jekyll-planet/blob/master/lib/jekyll/planet/tool.rb
+# Released under Public License: https://github.com/feedreader/jekyll-planet#license
 
 module JekyllPlanet
 
