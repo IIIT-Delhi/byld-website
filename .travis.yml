@@ -36,7 +36,7 @@ notifications:
   email: false
 
 before_deploy:
-  - mkdir planet_db
+  - mkdir -p planet_db
   - cp planet.db planet_db/planet.db
 
 deploy:
@@ -46,7 +46,7 @@ deploy:
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     on:
       branch: master
-  - local-dir: planet_db/
+  - local-dir: site/planet_db/
     provider: pages
     skip-cleanup: true
     keep-history: true
