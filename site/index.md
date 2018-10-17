@@ -40,7 +40,6 @@ projects:
     contributors: Sambhav Satija
     technologies: Django
     status: Released
-    tatus: 
 
   - projectName: Self Growth Portal
     url: http://sg.iiitd.edu.in:8087
