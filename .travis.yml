@@ -35,6 +35,10 @@ cache: bundler # caching bundler gem packages will speed up build
 notifications:
   email: false
 
+before_deploy:
+  - mkdir planet_db
+  - cp planet.db planet_db/planet.db
+
 deploy:
   - local-dir: out/
     provider: pages
