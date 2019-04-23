@@ -267,7 +267,12 @@ members:
 
 - email: gurek15033
   name: Gurek
-
+  
+- email: himanshu18337
+  name: Himanshu Garg
+  github: Himanshu-Garg
+  skils: Python, Javascript, C++
+  
 - email: kanika16047
   name: Kanika Saini
   github: kanikasaini
