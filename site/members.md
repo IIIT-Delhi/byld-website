@@ -17,12 +17,11 @@ admins:
     fab fa-github: "https://github.com/BaaniLeen"
     fab fa-facebook: "https://www.facebook.com/profile.php?id=100011462257325"
 
-- mail: "siddharth16268"
-  image: "admins/siddharth.jpg"
-  name: "Siddharth Yadav"
+- mail: "aman17017"
+  image: "admins/aman.jpg"
+  name: "Aman Mehra"
   fa-icons: 
-    fab fa-github: "https://github.com/geekSiddharth"
-    fab fa-facebook: "https://www.facebook.com/SiddharthYadav.geek"
+    fab fa-github: "https://github.com/amehra-github"
 
 - mail: "suryatej161022"
   image: "admins/suryatej.jpg"
@@ -458,5 +457,10 @@ members:
   name: Aniket Pradhan
   github: Aniket-Pradhan
   skills: Android (Java), Python, Web Dev, React Native
+
+- email: aman17017
+  name: Aman Mehra
+  github: amehra-github
+  skills: Python, Java, Flask, other stuff 
 
 ---
