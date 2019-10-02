@@ -191,6 +191,10 @@ members:
 
 # 2014-present 
 
+- email: abhinay18209
+  name: Abhinay Gupta
+  skills: Python, Java
+
 - email: abhishek16005
   name: abshishek16005
   github: ovshake
@@ -243,6 +247,10 @@ members:
   github: dvatsav
   skills: Android, although not a top skill, have started contributing to open source a little more frequently 
 
+- email: diptanshu18232
+  name: Diptanshu Mittal
+  skills: Python, Java, Flutter, Android, Web Development
+
 - email: divam14038
   name: Divam Gupta
   github: divamgupta
@@ -270,12 +278,12 @@ members:
 - email: himanshu18337
   name: Himanshu Garg
   github: Himanshu-Garg
-  skils: Python, Javascript, C++
+  skills: Python, Java, Javascript, C++
   
 - email: kanika16047
   name: Kanika Saini
   github: kanikasaini
-  skils: Javascript, React, Django, Python, Git, Mercurial, Firefox 
+  skills: Javascript, React, Django, Python, Git, Mercurial, Firefox 
 
 - email: katyayani15046
   name: Katyayni Singh
@@ -373,6 +381,10 @@ members:
 
 - email: rudraroop17311
   name: Rudraroop Roy
+
+- email: rushil18408
+  name: Rushil Thareja
+  skills: Python, Java, Android development
 
 - email: saatvik16261
   name: saatvik16261
