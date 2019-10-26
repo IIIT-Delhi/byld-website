@@ -322,6 +322,11 @@ members:
 - email: meghna16056
   name: Meghna Gupta
 
+- email: mihir19061
+  name: Mihir Chaturvedi
+  github: plibither8
+  skills: HTML5/Pug, CSS3/Stylus/SASS/LESS, JavaScript (ES6+/Node.js/Browser), TypeScript, Arduino, Python, MongoDB, SQL, PHP, Bash, C++, Java, Processing, Git
+
 - email: mukesh14149
   name: Mukesh Gupta
   github: mukesh14149
