@@ -1,5 +1,6 @@
 ---
 layout: subpage
+permalink: /members/
 title: 'Members'
 admins:
 

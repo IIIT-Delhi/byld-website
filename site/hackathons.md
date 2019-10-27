@@ -1,6 +1,7 @@
 ---
 layout: subpage
 title: 'Hackathons'
+permalink: /hackathons/
 events:
 - secondPrizeTeam: "AK 47 - Arpit Anand and Kunal Mehta"
   judges: "Apoorv Narang, Jayasi Mehar, Utkarsh Gupta"
