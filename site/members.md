@@ -17,12 +17,11 @@ admins:
     fab fa-github: "https://github.com/BaaniLeen"
     fab fa-facebook: "https://www.facebook.com/profile.php?id=100011462257325"
 
-- mail: "siddharth16268"
-  image: "admins/siddharth.jpg"
-  name: "Siddharth Yadav"
+- mail: "aman17017"
+  image: "admins/aman.jpg"
+  name: "Aman Mehra"
   fa-icons: 
-    fab fa-github: "https://github.com/geekSiddharth"
-    fab fa-facebook: "https://www.facebook.com/SiddharthYadav.geek"
+    fab fa-github: "https://github.com/amehra-github"
 
 - mail: "suryatej161022"
   image: "admins/suryatej.jpg"
@@ -192,6 +191,10 @@ members:
 
 # 2014-present 
 
+- email: abhinay18209
+  name: Abhinay Gupta
+  skills: Python, Java
+
 - email: abhishek16005
   name: abshishek16005
   github: ovshake
@@ -244,6 +247,10 @@ members:
   github: dvatsav
   skills: Android, although not a top skill, have started contributing to open source a little more frequently 
 
+- email: diptanshu18232
+  name: Diptanshu Mittal
+  skills: Python, Java, Flutter, Android, Web Development
+
 - email: divam14038
   name: Divam Gupta
   github: divamgupta
@@ -267,11 +274,16 @@ members:
 
 - email: gurek15033
   name: Gurek
-
+  
+- email: himanshu18337
+  name: Himanshu Garg
+  github: Himanshu-Garg
+  skills: Python, Java, Javascript, C++
+  
 - email: kanika16047
   name: Kanika Saini
   github: kanikasaini
-  skils: Javascript, React, Django, Python, Git, Mercurial, Firefox 
+  skills: Javascript, React, Django, Python, Git, Mercurial, Firefox 
 
 - email: katyayani15046
   name: Katyayni Singh
@@ -310,6 +322,11 @@ members:
 - email: meghna16056
   name: Meghna Gupta
 
+- email: mihir19061
+  name: Mihir Chaturvedi
+  github: plibither8
+  skills: HTML5/Pug, CSS3/Stylus/SASS/LESS, JavaScript (ES6+/Node.js/Browser), TypeScript, Arduino, Python, MongoDB, SQL, PHP, Bash, C++, Java, Processing, Git
+
 - email: mukesh14149
   name: Mukesh Gupta
   github: mukesh14149
@@ -331,9 +348,9 @@ members:
   skills: "*"
 
 - email: palash16064
-  name: palash16064
+  name: Palash Aggrawal
   github: Cosmopal
-  skills: Android, Java (NOT GUI), Python
+  skills: Android, Firebase, Java, Python, Machine Learning, NLP, in general dev stuff - fun and frustration
 
 - email: paridhi16065
   name: paridhi16065
@@ -369,6 +386,10 @@ members:
 
 - email: rudraroop17311
   name: Rudraroop Roy
+
+- email: rushil18408
+  name: Rushil Thareja
+  skills: Python, Java, Android development
 
 - email: saatvik16261
   name: saatvik16261
@@ -458,5 +479,10 @@ members:
   name: Lakshya A Agrawal
   github: LakshyAAAgrawal
   skills: Python
+
+- email: aman17017
+  name: Aman Mehra
+  github: amehra-github
+  skills: Python, Java, Flask, other stuff 
 
 ---
