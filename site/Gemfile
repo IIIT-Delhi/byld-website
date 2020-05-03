@@ -30,4 +30,3 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Blog aggregation via RSS feeds
 gem "pluto"
-gem "jekyll-planet"
