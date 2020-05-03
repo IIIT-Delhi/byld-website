@@ -3,6 +3,7 @@ rvm:
   - 2.4.1
 
 install:
+  - gem install bundler:1.16.2
   - .ci/download_db.sh
   - cd site/
   - bundle install
