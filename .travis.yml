@@ -3,6 +3,7 @@ rvm:
   - 2.4.1
 
 install:
+  - gem install bundler:1.16.2
   - .ci/download_db.sh
   - cd site/
   - bundle install
@@ -13,7 +14,7 @@ before_script:
   - pluto update planet.ini
   # Use our own spinoff of the jekyll gem jekyll-planet to generate posts
   # Original gem link: https://github.com/feedreader/jekyll-planet
-  - ruby -r 'jekyll/planet' ruby_scripts/tool.rb
+  - ruby ruby_scripts/tool.rb
 
 script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination ../out/
