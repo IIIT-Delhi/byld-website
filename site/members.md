@@ -24,6 +24,14 @@ admins:
     fab fa-facebook: "https://www.facebook.com/aniket.pradhan.311/"
     fas fa-globe-asia: "http://home.iiitd.edu.in/~aniket17133/"
 
+- mail: "lakshya18242"
+  image: "admins/lakshya.png"
+  name: "Lakshya A Agrawal"
+  fa-icons: 
+    fab fa-github: "https://github.com/LakshyAAAgrawal"
+    fab fa-facebook: "https://www.facebook.com/LakshyAAAgrawal/"
+    fab fa-twitter: "https://twitter.com/LakshyAAAgrawal"
+
 #TODO: Add admin details here
 
 #TODO: sort the data in the source in some sensible way (first by batch, then by names). rn alums are random and current members are sorted by name
