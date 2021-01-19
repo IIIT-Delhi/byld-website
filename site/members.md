@@ -485,4 +485,9 @@ members:
   github: smera18315
   skills: Python, Dart, Design  
 
+- name: Saksham Mrig
+  email: saksham19385
+  github: sksum
+  skills: Java, MERN, TS, Python, Flask, Rust
+
 ---
