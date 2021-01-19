@@ -10,48 +10,21 @@ admins:
 # Icon names must be prefixed with either `fab` or with `fas`. `fab` is used by fontawesome for brand icons (e.g. facebook, github, twitter),
 # and `fas` is used by fontawesome for other icons (they call these "solid icons"). You can find which one to use by looking at the html snippet on the icon page.
 
-- mail: "baani16234"
-  image: "admins/baani.jpg"
-  name: "Baani Leen Kaur"
-  fa-icons: 
-    fab fa-github: "https://github.com/BaaniLeen"
-    fab fa-facebook: "https://www.facebook.com/profile.php?id=100011462257325"
-
 - mail: "aman17017"
   image: "admins/aman.jpg"
   name: "Aman Mehra"
   fa-icons: 
     fab fa-github: "https://github.com/amehra-github"
 
-- mail: "suryatej161022"
-  image: "admins/suryatej.jpg"
-  name: "Suryatej Reddy Vyalla"
+- mail: "aniket17133"
+  image: "admins/aniket.jpg"
+  name: "Aniket Pradhan"
   fa-icons: 
-    fab fa-github: "https://github.com/suryatejreddy"
-    fab fa-facebook: "https://www.facebook.com/profile.php?id=100000854901674"
+    fab fa-github: "https://github.com/Aniket-Pradhan"
+    fab fa-facebook: "https://www.facebook.com/aniket.pradhan.311/"
+    fas fa-globe-asia: "http://home.iiitd.edu.in/~aniket17133/"
 
-- mail: "kanika16047"
-  image: "admins/kanika.jpg"
-  name: "Kanika Saini"
-  fa-icons: 
-    fab fa-github: "https://github.com/kanikasaini"
-    fab fa-facebook: "https://www.facebook.com/kanikasaini911"
-    fab fa-twitter: "https://twitter.com/kanikasaini911"
-
-- mail: "peeyush16254"
-  image: "admins/peeyush.png"
-  name: "Peeyush Kushwaha"
-  fa-icons:
-    fab fa-github: "https://github.com/peey"
-    fab fa-twitter: "https://twitter.com/peeyFTW"
-
-- mail: "viresh16118"
-  image: "admins/viresh.jpg"
-  name: "Viresh Gupta"
-  fa-icons:
-    fab fa-github: "https://github.com/virresh"
-    fas fa-globe-asia: "https://virresh.github.io"
-    fab fa-twitter: "https://twitter.com/virresh"
+#TODO: Add admin details here
 
 #TODO: sort the data in the source in some sensible way (first by batch, then by names). rn alums are random and current members are sorted by name
 
