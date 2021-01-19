@@ -480,4 +480,9 @@ members:
   github: amehra-github
   skills: Python, Java, Flask, other stuff 
 
+- email: vishwesh18119
+  name: Vishwesh Kumar
+  github: vishwesh-D-kumar
+  skills: Python, Java, Django, astor 
+
 ---
