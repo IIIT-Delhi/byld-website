@@ -480,4 +480,9 @@ members:
   github: amehra-github
   skills: Python, Java, Flask, other stuff 
 
+- email: himanshi18037
+  name: Himanshi Mathur
+  github: himanshi18037
+  skills: Python, Java, ML, other stuff 
+  
 ---
