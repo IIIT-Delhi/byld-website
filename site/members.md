@@ -480,4 +480,8 @@ members:
   github: amehra-github
   skills: Python, Java, Flask, other stuff 
 
+- email: ria18405
+  name: Ria Gupta
+  github: ria18405
+  skills: Python, Java, Django, ElasticSearch, Kibana
 ---
