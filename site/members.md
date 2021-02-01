@@ -234,7 +234,7 @@ members:
 - email: chirag17041
   name: Chirag Jain
   github: chirag-jn
-  skills: C++, Python, Scripting, Unity 
+  skills: Python, Android, Firebase, ReactJS, Web Development
 
 # he's not on the mailing list
 - email: daksh17336
