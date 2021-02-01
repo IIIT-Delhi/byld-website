@@ -479,6 +479,11 @@ members:
   name: Aman Mehra
   github: amehra-github
   skills: Python, Java, Flask, other stuff 
+  
+- email: smera18315
+  name: Smera Goel
+  github: smera18315
+  skills: Python, Dart, Design  
 
 - name: Saksham Mrig
   email: saksham19385
