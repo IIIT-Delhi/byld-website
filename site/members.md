@@ -495,4 +495,10 @@ members:
   github: vishwesh-D-kumar
   skills: Python, Java, Django, astor 
 
+- email: bassam19032
+  name: Bassam Pervez
+  github: basp0
+  skills: Python, Java, Django, Javascript, Bash, Processing, Arduino, OpenCV, git  
+
+
 ---
