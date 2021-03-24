@@ -501,4 +501,8 @@ members:
   skills: Python, Java, Django, Javascript, Bash, Processing, Arduino, OpenCV, git  
 
 
+- email: ria18405
+  name: Ria Gupta
+  github: ria18405
+  skills: Python, Java, Django, ElasticSearch, Kibana
 ---
