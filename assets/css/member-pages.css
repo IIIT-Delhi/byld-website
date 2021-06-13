@@ -1,0 +1,29 @@
+#per-member-page-container {
+  padding: 150px 10px 30px; /* top side bottom */
+}
+
+.member-content-separation-line {
+  border-top: 1px solid #cecece;
+}
+
+/**
+ * Note: the below 3 rules are to make the footer stay at the bottom even if user's page's content is too short
+ * See https://stackoverflow.com/a/27812717
+ * Problem with absolute positioning layout is that if screen height is too small (mobile devices), then the footer overlaps the content
+ * Problem with css table based layout is I'm unable to get the heights to work
+ * In browsers which don't support flexbox or viewport units ( <= IE10 & opera mini), the footer will simply appear not at the bottom of the page if the content is too short, nothing else should be affected
+ */
+#page-bottom {
+  margin-top: auto;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
