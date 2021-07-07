@@ -474,6 +474,11 @@ members:
   name: Aniket Pradhan
   github: Aniket-Pradhan
   skills: Android (Java), Python, Web Dev, React Native
+  
+- email: lakshya18242
+  name: Lakshya A Agrawal
+  github: LakshyAAAgrawal
+  skills: Python
 
 - email: aman17017
   name: Aman Mehra
