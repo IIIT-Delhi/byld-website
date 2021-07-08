@@ -1,6 +1,7 @@
 ---
 layout: subpage
 title: 'Hack Nights'
+permalink: /hacknights/
 comingHacknight: ''
 events:
 - venue: C01

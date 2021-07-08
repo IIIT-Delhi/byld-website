@@ -1,6 +1,8 @@
 ---
 layout: subpage
 title: 'Techtalks'
+permalink: /techtalks/
+
 comingTechtalk: ''
 events:
 - venue: C01
