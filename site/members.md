@@ -501,4 +501,9 @@ members:
   skills: Python, Java, Django, Javascript, Bash, Processing, Arduino, OpenCV, git  
 
 
+- email: himanshi18037
+  name: Himanshi Mathur
+  github: himanshi18037
+  skills: Python, Java, ML, other stuff 
+  
 ---
